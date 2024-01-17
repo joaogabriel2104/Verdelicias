@@ -1,0 +1,72 @@
+.backCinza {
+    width: 80%;
+    border-radius: 30px;
+    margin: auto
+}
+
+#conteudoEscrito {
+    padding-top: 5px;
+}
+
+.conteudo2 {
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo2 div {
+    width: 24%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.conteudo2 div img {
+    position: relative;
+    width: 75%;
+    border-radius: 50%;
+}
+
+#avaliacao {
+    margin-left: 5%;
+    color: white;
+}
+
+.profissional {
+    font-weight: bold;
+}
+
+#alinharNutri {
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+    #alinharNutri i {
+        margin-right: 5px;
+    }
+
+#imagem {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .backCinza {
+        width: 90%;
+    }
+
+    .conteudo2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo2 div {
+        width: 100%;
+        margin-top: 15px;
+    }
+}

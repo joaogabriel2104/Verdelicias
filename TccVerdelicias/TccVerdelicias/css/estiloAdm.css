@@ -1,0 +1,91 @@
+section {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#infoDetalhesPerfil {
+    display: flex;
+    width: 100%;
+}
+
+#infoDadosPerfil {
+    margin-left: 15px;
+}
+
+.fotoPerfil img {
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    display: flex;
+    text-align: center;
+}
+
+.comentario {
+    display: flex;
+    margin-top: 15px;
+    width: 19%;
+}
+
+.comentarios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagemComentario {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.NomeEData {
+    display: flex;
+    align-items: center;
+}
+
+.dataComentario {
+    margin-left: 10px;
+    color: #a4a4a4;
+}
+
+.textosComentario {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.imagemDenunciaPerfil {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.denunciaPerfis {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.denunciaPerfil {
+    width: 19%;
+}
+
+.fotoDenunciaPerfil {
+    display: flex;
+    justify-content: center;
+}
+
+.imagemDenunciaPerfil {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.descPerfil {
+    margin-top: 10px;
+}
+
+    .descPerfil p {
+        margin-bottom: 5px;
+    }
+
+#imagemDenunciar {
+    width: 40%;
+}

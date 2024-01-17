@@ -1,0 +1,48 @@
+﻿#backCinza {
+    width: 50%;
+    border-radius: 30px;
+    margin: auto;
+}
+
+#iconeSetaVoltar {
+    color: #3B6126;
+    padding: 6px;
+    padding-left: 0;
+}
+
+.alinharSeta {
+    display: flex;
+}
+
+.fotos {
+    display: flex;
+}
+
+.imgPerfil {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.descPerfil {
+    margin-left: 10px;
+}
+
+.descPerfil p {
+    margin-bottom: 5px;
+}
+
+.posicaoBotaoDenunciar {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.espacoDescricao {
+    padding: 10px;
+}
+
+.descricaoDenuncia {
+    height: 150px;
+    width: 98%;
+    resize: none;
+}

@@ -1,0 +1,48 @@
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.conteudo img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+#alinha {
+    width: 32%;
+    margin-bottom: 15px;
+}
+
+#alinha p {
+    width: 100%;
+}
+
+#alinhaEndereco {
+    font-weight: bold;
+}
+
+#alinhaEndereco i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 500px) {
+    .secaoRestaurantes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo {
+        flex-direction: column;
+    }
+
+    #alinha {
+        width: 100%;
+        padding: 0;
+    }
+}

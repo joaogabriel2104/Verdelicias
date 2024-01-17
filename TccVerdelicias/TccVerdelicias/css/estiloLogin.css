@@ -1,0 +1,62 @@
+section {
+    width: 500px;
+    margin: auto;
+    margin-top: 20%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.alinhamentoTexto{
+    margin-top: 30px;
+}
+
+.cadastrar {
+    color: #3B6126;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.entrarECancelar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.divCancelar{
+    display: flex;
+}
+
+#divIconeSeta{
+    padding-left: 6%;
+}
+
+#iconeSeta{
+    color: #A00C0C;
+}
+
+#cancelar {
+    color: #A00C0C;
+    margin-left: 5px;
+}
+
+#divTextoCriarCadastro{
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    section {
+        width: 90%;
+        margin-top: 25%;
+    }
+}

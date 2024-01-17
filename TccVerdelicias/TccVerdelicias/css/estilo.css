@@ -1,0 +1,482 @@
+﻿* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.mobile {
+    display: none;
+}
+
+section {
+    margin-top: 25px;
+}
+
+.primeiraSection {
+    margin-top: 145px;
+}
+
+.ultimaSection {
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 17px;
+    margin: 0;
+    color: #01400E;
+    font-weight: 600;
+}
+
+h2 {
+    margin: 0;
+    color: #01400E;
+    font-size: 15px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    padding-bottom: 80px;
+    background-color: #eee6db;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 70px;
+    background-color: #01400E;
+    z-index: 10;
+}
+
+.areaSegura {
+    width: 80%;
+    margin: auto;
+}
+
+.areaSeguraNav {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.areaHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+#logoHeader {
+    width: 148px;
+    height: 42px;
+    margin: 0px;
+}
+
+/* nav */
+#navPrincipal {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+}
+
+nav {
+    margin: auto;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    margin: 0px;
+    padding-left: 0px;
+    justify-content: space-between;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 16px;
+}
+
+#navPrincipal ul li {
+    padding: 0px 35px;
+}
+
+#procurarPerfil {
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.Procurar {
+    width: 73%;
+}
+
+.inputProcurar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 5px;
+}
+
+.imgLupa {
+    border: none;
+    display: flex;
+    width: 23px;
+    height: 22px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+#imgUser {
+    width: 35px;
+    border-radius: 30px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.ImgSair {
+    height: 25px;
+    margin-left: 15px;
+}
+
+.perfilESair {
+    width: 27%;
+    justify-content: flex-end;
+}
+
+#navDietas {
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    background-color: #dda;
+    z-index: 10;
+}
+
+#navDietas ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navDietas ul li a {
+    color: black;
+    font-size: 14px;
+}
+
+.barra {
+    color: #3b6126;
+    font-size: 20px;
+}
+
+/* RECEITAS (horizontal) */
+.conteudosReceitas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoReceita {
+    margin-top: 10px;
+    width: 19%;
+    padding-right: 1%;
+    border-radius: 7px;
+}
+
+.conteudoReceita img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.conteudoReceita p {
+    overflow: hidden;
+    text-overflow: clip;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.estrelas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    bottom: 45px;
+    margin-right: 2%;
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.star {
+    font-size: 99%;
+}
+
+#avaliacao {
+    margin-left: 5%;
+    color: white;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: #01400E;
+    margin-top: 1%;
+    position: absolute;
+    bottom: 0;
+}
+
+.logoESobre {
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+
+.conteudoFooter {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+#logoFooter2 {
+    width: 148px;
+    height: 42px;
+}
+
+.Sobre {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 2%;
+}
+
+.Sobre p {
+    margin-left: 5%;
+}
+
+.iconsFooter i {
+    font-size: 22px;
+    margin-left: 5%;
+}
+
+.iconsFooter {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* OUTROS */
+select {
+    height: 29px;
+    border-radius: 7px;
+}
+
+input[type=text] {
+    border: thin solid;
+    border-radius: 7px;
+    height: 25px;
+}
+
+input[type=password] {
+    border: thin solid;
+    border-radius: 7px;
+    height: 25px;
+}
+
+input[type=number] {
+    border: thin solid;
+    border-radius: 7px;
+    height: 25px;
+}
+
+textarea {
+    border: thin solid;
+    border-radius: 7px;
+    min-height: 30px;
+    padding: 5px;
+}
+
+input[type=submit] {
+    height: 35px;
+    width: 85px;
+    border: none;
+    background-color: #3b6126;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#botaoAdicionar {
+    position: fixed;
+    bottom: 8%;
+    right: 8%;
+    z-index: 10;
+}
+
+.adicionar {
+    width: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+/* MEDIA QUERY */
+
+/* CELULAR DE PÉ */
+
+@media screen and (max-width: 500px) {
+    body {
+        padding-bottom: 185px;
+    }
+
+    .normal {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    header {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    header div {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .areaSegura {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #navPrincipal {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #navPrincipal ul li {
+        padding: 0;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    #procurarPerfil {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .Procurar {
+        width: 100%;
+    }
+
+    .perfilESair {
+        justify-content: flex-end;
+    }
+
+    .imgLupa {
+        margin-right: 5px;
+    }
+
+    #navDietas {
+        display: none;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .conteudosReceitas {
+        flex-direction: column;
+    }
+
+    .conteudoReceita {
+        width: 100%;
+    }
+
+    .conteudoReceita img {
+        width: 100%;
+    }
+
+    .conteudoFooter {
+        flex-direction: column;
+        height: 185px;
+    }
+
+    .logoESobre {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+
+    .Sobre {
+        justify-content: space-between;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .Sobre p {
+        margin-left: 0;
+    }
+
+    .iconsFooter {
+        width: 100%;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+
+    .iconsFooter i {
+        margin: 0;
+        font-size: 32px;
+    }
+}
+
+/* CELULAR DEITADO */
+
+@media screen and (min-width: 401px) and (max-width: 960px) {
+}

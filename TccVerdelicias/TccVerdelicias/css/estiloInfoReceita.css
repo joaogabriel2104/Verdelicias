@@ -1,0 +1,494 @@
+#info1 {
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+}
+
+.sectionInfo1 {
+    width: 80%;
+    margin-right: 5%;
+}
+
+.NomeReceita {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagemReceita {
+    width: 60%
+}
+
+.ftReceita {
+    width: 100%;
+    border-radius: 7px;
+    margin-top: -30px;
+}
+
+.favorito {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    bottom: 42px;
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 40px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 2%;
+    color: white;
+}
+
+.denuncia {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    top: 12px;
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 40px;
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 2%;
+    color: white;
+}
+
+#btnDenunciar {
+    width: 25px;
+}
+
+.dadosLateral {
+    width: 35%;
+}
+
+#linkarPelaFoto {
+    display: flex;
+    width: 25%;
+}
+
+#linkarPelaFoto img {
+    width: 100%;
+}
+
+.informacoesUsuario {
+    color: black;
+}
+
+#nomeUsuario {
+    color: #01400E;
+}
+
+.receitaEPerfil {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h1Perfil {
+    margin: 0;
+}
+
+.Perfil {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Perfil img {
+    width: 25%;
+    border-radius: 100px;
+}
+
+#infoDadosPerfil {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#btnSeguir {
+    width: 100px;
+    height: 30px;
+    background-color: #3B6126;
+    color: white;
+    border-radius: 10px;
+}
+
+.avaliacoes {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 36%;
+}
+
+.avaliacao {
+    width: 20px;
+    height: 20px;
+}
+
+.btnEstrela {
+    padding-left: 5px;
+}
+
+.conteudosReceitas {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.conteudoReceita {
+    width: 100%;
+}
+
+.sectionOutrasReceitas {
+    width: 20%;
+}
+
+.separarSections {
+    display: flex;
+}
+
+#avaliacao {
+    font-size: 90%;
+    margin-left: 5%;
+    color: white;
+}
+
+#duracao {
+    margin-left: 5%;
+}
+
+.estrelas1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    bottom: 15%;
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 13%;
+    height: 10%;
+    border-radius: 30px;
+    margin-left: 2%;
+}
+
+#infoDadosReceita {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#infoDadosReceita p {
+    margin-top: 5px;
+}
+
+.decoracaoTexto {
+    text-decoration: line-through;
+}
+
+#etapa {
+    color: #28ad2c;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.numeroIcon {
+    position: relative;
+    width: 20px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    margin-right: 5px;
+}
+
+.conteudoModoPreparo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.EtapasModoDePreparo {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#sectionIngredientes {
+    margin-top: -15px;
+}
+
+#sectionModoPreparo {
+    margin-top: 15px;
+}
+
+.comentarios {
+    margin-top: 25px;
+}
+
+.tituloELinha {
+    display: flex;
+    align-items: center;
+}
+
+.linhaComentario {
+    margin-left: 5px;
+    width: 100%;
+    height: 3px;
+    background-color: #01400E;
+}
+
+.botaoETxtComentario, .botaoSalvar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.botaoSalvar{
+    width: 100%;
+}
+
+.txtComentario {
+    width: 98%;
+    height: 75px;
+    resize: none;
+    padding: 1%;
+    margin-top: 5px;
+}
+
+.botaoEnviarComentario {
+    margin-top: 5px;
+}
+
+.imagemComentario {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.imagemENomeComentario {
+    display: flex;
+    margin-top: 15px;
+}
+
+.NomeEData {
+    display: flex;
+    align-items: center;
+}
+
+.dataComentario {
+    margin-left: 10px;
+    color: #a4a4a4;
+}
+
+.textosComentario {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.botaoDenunciar {
+    margin-top: 3px;
+    border: none;
+    background-color: unset;
+    padding: 0;
+}
+
+.NomeEDenuncia {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imagemDenunciar {
+    height: 23px;
+}
+
+#corSeguindo {
+    background-color: #9ca19d;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+#imgFavorito {
+    height: 17px;
+}
+
+#favoritado {
+    color: blue;
+    height: 17px;
+}
+
+#btnEditar, #btnCancelar {
+    font-size: 17px;
+    width: 55px;
+    text-align: center;
+    padding: 0;
+    font-weight: 900;
+    background-color: transparent;
+    color: #01400E;
+}
+
+#btnCancelar {
+    width: 80px;
+}
+
+#txtNomeReceita{
+    width:80%;
+}
+
+#txtTempoPreparo, #txtRendimento {
+    width: 15%;
+}
+
+.qtdInput{
+    width: 5%;
+}
+
+.etapaPreparo {
+    resize: none;
+    width: 100%;
+}
+
+.margemParagrafo{
+    margin-bottom: 5px;
+}
+
+.conteudoImagem {
+    display: flex;
+}
+
+.iconeImagem {
+    margin-left: 5px;
+    width: 20px;
+}
+
+.escondido {
+    display: none;
+}
+
+.InputFile {
+    margin-left: 10px;
+    border: none;
+    border-radius: 0;
+}
+
+#caixa-foto-selecionada {
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+    width: 100%;
+    max-height: 200px;
+}
+
+.cropper-container {
+    width: 100% !important;
+    height: auto;
+}
+
+.cropper-modal {
+    background-color: #fff !important;
+    opacity: 0.25;
+}
+
+.cropper-view-box {
+    outline: 1px solid #264779 !important;
+    outline-color: rgba(38, 71, 121, 75%) !important;
+}
+
+.cropper-line {
+    background-color: #264779 !important;
+}
+
+.cropper-point {
+    background-color: #264779 !important;
+}
+
+.dietasEEnviar {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#btnDeletar {
+    background-color: #af1e1e;
+    margin-right: 5px;
+}
+
+#vermelho {
+    color: red;
+}
+
+.botaoSalvar {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        margin-bottom: 5px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+    .sectionInfo1 {
+        width: 100%;
+    }
+
+    .NomeReceita {
+        width: 100%;
+    }
+
+    .receitaEPerfil {
+        flex-direction: column;
+    }
+
+    #info1 {
+        width: 100%;
+    }
+
+    .imagemReceita {
+        width: 100%;
+    }
+
+    .avaliacoes {
+        width: 90%;
+    }
+
+    .dadosLateral {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .checkList {
+        width: 20px;
+    }
+
+    #sectionIngredientes {
+        margin-top: 25px;
+    }
+
+    #etapa {
+        width: 23px;
+        height: 23px;
+    }
+
+    .numeroIcon {
+        margin-left: 5%;
+        margin-right: 10px;
+    }
+
+    .sectionOutrasReceitas {
+        width: 100%;
+    }
+    .dataComentario{
+        margin-left: 5px;
+        font-size: 11px;
+    }
+}

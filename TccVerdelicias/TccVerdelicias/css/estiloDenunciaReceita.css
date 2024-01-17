@@ -1,0 +1,48 @@
+#backCinza {
+    width: 50%;
+    border-radius: 30px;
+    margin: auto;
+}
+
+#iconeSetaVoltar {
+    color: #3B6126;
+    padding: 6px;
+    padding-left: 0;
+}
+
+.alinharSeta{
+    display: flex;
+}
+
+.fotos {
+    display: flex;
+}
+
+.imgReceita {
+    width: 45%;
+    border-radius: 7px;
+}
+
+.descReceita {
+    margin-left: 10px;
+}
+
+.descReceita p {
+    margin-bottom: 5px;
+}
+
+.posicaoBotaoDenunciar {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.espacoDescricao {
+    padding: 10px;
+}
+
+.descricaoDenuncia {
+    height: 150px;
+    width: 98%;
+    resize: none;
+}

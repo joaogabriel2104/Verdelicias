@@ -1,0 +1,125 @@
+section {
+    width: 700px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#alinhamentoInputs .vermelho {
+    margin-top: 0px;
+    color: red;
+}
+
+h1{
+    text-align: center;
+}
+
+#alinhamentoInputs {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.tamanhoInputs {
+    width: 100%;
+    border: thin solid;
+    border-radius: 7px;
+}
+
+#tamanhoInputData{
+    width: 30%;
+    border-color: white;
+}
+
+#alinhamentoInputs p{
+    margin-top: 7px;
+}
+
+.entrarECancelar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.divCancelar {
+    display: flex;
+}
+
+#alinhamentoInputs .divCancelar p {
+    margin-top: 0%;
+}
+
+#divIconeSeta {
+    padding-left: 6%;
+}
+
+#iconeSeta {
+    color: #A00C0C;
+}
+
+#cancelar {
+    color: #A00C0C;
+    margin-left: 5px;
+}
+
+input {
+    height: 25px;
+}
+
+.inputImg {
+    border: none;
+    border-radius: 0;
+}
+
+#caixa-foto-selecionada {
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: calc(100% - 220px);
+    max-height: 370px;
+}
+
+.cropper-container {
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.cropper-modal {
+    background-color: #fff !important;
+    opacity: 0.25;
+}
+
+.cropper-view-box {
+    outline: 1px solid #264779 !important;
+    outline-color: rgba(38, 71, 121, 75%) !important;
+}
+
+.cropper-line {
+    background-color: #264779 !important;
+}
+
+.cropper-point {
+    background-color: #264779 !important;
+}
+
+#alinhamentoInputs #tipoDieta {
+    margin-top: 30px;
+}
+
+.divListaDietas {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    section {
+        width: 90%;
+    }
+
+    #alinhamentoInputs {
+        width: 100%;
+    }
+}

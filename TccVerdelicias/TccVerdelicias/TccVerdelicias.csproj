@@ -1,0 +1,542 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCDCDE1A-9E49-4540-8C6E-F6BF9EABF0F7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TccVerdelicias</RootNamespace>
+    <AssemblyName>TccVerdelicias</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.21.9.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.21.9\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.5\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.5\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.1.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.1.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.4.4.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.7.0.2\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="ZstdSharp, Version=0.7.1.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.7.1\lib\net461\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adm\comentarios.aspx" />
+    <Content Include="adm\gerenciamentos.aspx" />
+    <Content Include="adm\index.aspx" />
+    <Content Include="adm\perfis.aspx" />
+    <Content Include="adm\receitas.aspx" />
+    <Content Include="cadastrar.aspx" />
+    <Content Include="css\estiloCadastrar.css" />
+    <Content Include="css\estiloDenunciaComentario.css" />
+    <Content Include="css\estiloDenunciaUsuario.css" />
+    <Content Include="css\estiloErro.css" />
+    <Content Include="css\estiloIndex.css" />
+    <Content Include="css\estiloAdm.css" />
+    <Content Include="css\estiloDenunciaReceita.css" />
+    <Content Include="css\estilo.css" />
+    <Content Include="css\estiloInfoReceita.css" />
+    <Content Include="css\estiloLogin.css" />
+    <Content Include="css\estiloPerfil.css" />
+    <Content Include="css\estiloPostar.css" />
+    <Content Include="css\estiloRestaurantes.css" />
+    <Content Include="css\estiloSaude.css" />
+    <Content Include="css\estiloSobre.css" />
+    <Content Include="denunciaComentario.aspx" />
+    <Content Include="denunciaUsuario.aspx" />
+    <Content Include="denunciaReceita.aspx" />
+    <Content Include="editarPerfil.aspx" />
+    <Content Include="erro.aspx" />
+    <Content Include="images\FotosPerfis\beaevangelica04.jpg" />
+    <Content Include="images\FotosPerfis\erro.jpg" />
+    <Content Include="images\FotosPerfis\sabiabia29.jpg" />
+    <Content Include="images\FotosReceitas\beaevangelica04-1.jpg" />
+    <Content Include="images\FotosReceitas\beaevangelica04-2.jpg" />
+    <Content Include="images\FotosReceitas\erro.jpg" />
+    <Content Include="images\FotosReceitas\fabinhopiccoli11-1.jpg" />
+    <Content Include="images\FotosReceitas\jojofafa21-2.jpg" />
+    <Content Include="images\FotosReceitas\sabiabia29-1.jpg" />
+    <Content Include="images\FotosReceitas\sabiabia29-2.jpg" />
+    <Content Include="images\FotosReceitas\vivibiba15-1.jpg" />
+    <Content Include="images\iconAdicionar.png" />
+    <Content Include="images\iconImagem.png" />
+    <Content Include="images\IconModoDePreparo.png" />
+    <Content Include="images\logoBranco.png" />
+    <Content Include="images\lupa.png" />
+    <Content Include="images\taylor.jpg" />
+    <Content Include="images\teste.png" />
+    <Content Include="images\user.png" />
+    <Content Include="index.aspx" />
+    <Content Include="js\scripts.js" />
+    <Content Include="js\scriptsCadastrar.js" />
+    <Content Include="js\scriptsEditarPerfil.js" />
+    <Content Include="js\scriptsReceita.js" />
+    <Content Include="lib\atualizarDieta.aspx" />
+    <Content Include="lib\atualizarItemReceita.aspx" />
+    <Content Include="lib\atualizarModoPreparo.aspx" />
+    <Content Include="lib\atualizarReceita.aspx" />
+    <Content Include="lib\atualizarUsuario.aspx" />
+    <Content Include="lib\inserirDieta.aspx" />
+    <Content Include="lib\inserirImagem.aspx" />
+    <Content Include="lib\inserirImagemPerfil.aspx" />
+    <Content Include="lib\inserirIngredientes.aspx" />
+    <Content Include="lib\inserirItemReceita.aspx" />
+    <Content Include="lib\inserirModoPreparo.aspx" />
+    <Content Include="lib\inserirPreferenciaDieta.aspx" />
+    <Content Include="lib\inserirReceitas.aspx" />
+    <Content Include="lib\inserirUsuario.aspx" />
+    <Content Include="lib\redirecionar.aspx" />
+    <Content Include="lib\redirecionarPerfil.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="perfil.aspx" />
+    <Content Include="pesquisa.aspx" />
+    <Content Include="postar.aspx" />
+    <Content Include="receita.aspx" />
+    <Content Include="receitas.aspx" />
+    <Content Include="restaurantes.aspx" />
+    <Content Include="saude.aspx" />
+    <Content Include="sobre.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adm\comentarios.aspx.cs">
+      <DependentUpon>comentarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adm\comentarios.aspx.designer.cs">
+      <DependentUpon>comentarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adm\gerenciamentos.aspx.cs">
+      <DependentUpon>gerenciamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adm\gerenciamentos.aspx.designer.cs">
+      <DependentUpon>gerenciamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adm\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adm\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adm\perfis.aspx.cs">
+      <DependentUpon>perfis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adm\perfis.aspx.designer.cs">
+      <DependentUpon>perfis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adm\receitas.aspx.cs">
+      <DependentUpon>receitas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adm\receitas.aspx.designer.cs">
+      <DependentUpon>receitas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastrar.aspx.cs">
+      <DependentUpon>cadastrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastrar.aspx.designer.cs">
+      <DependentUpon>cadastrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="denunciaComentario.aspx.cs">
+      <DependentUpon>denunciaComentario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="denunciaComentario.aspx.designer.cs">
+      <DependentUpon>denunciaComentario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="denunciaUsuario.aspx.cs">
+      <DependentUpon>denunciaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="denunciaUsuario.aspx.designer.cs">
+      <DependentUpon>denunciaUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="denunciaReceita.aspx.cs">
+      <DependentUpon>denunciaReceita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="denunciaReceita.aspx.designer.cs">
+      <DependentUpon>denunciaReceita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editarPerfil.aspx.cs">
+      <DependentUpon>editarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editarPerfil.aspx.designer.cs">
+      <DependentUpon>editarPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="erro.aspx.cs">
+      <DependentUpon>erro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="erro.aspx.designer.cs">
+      <DependentUpon>erro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\atualizarDieta.aspx.cs">
+      <DependentUpon>atualizarDieta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\atualizarDieta.aspx.designer.cs">
+      <DependentUpon>atualizarDieta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\atualizarItemReceita.aspx.cs">
+      <DependentUpon>atualizarItemReceita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\atualizarItemReceita.aspx.designer.cs">
+      <DependentUpon>atualizarItemReceita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\atualizarModoPreparo.aspx.cs">
+      <DependentUpon>atualizarModoPreparo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\atualizarModoPreparo.aspx.designer.cs">
+      <DependentUpon>atualizarModoPreparo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\atualizarReceita.aspx.cs">
+      <DependentUpon>atualizarReceita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\atualizarReceita.aspx.designer.cs">
+      <DependentUpon>atualizarReceita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\atualizarUsuario.aspx.cs">
+      <DependentUpon>atualizarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\atualizarUsuario.aspx.designer.cs">
+      <DependentUpon>atualizarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\inserirDieta.aspx.cs">
+      <DependentUpon>inserirDieta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\inserirDieta.aspx.designer.cs">
+      <DependentUpon>inserirDieta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\inserirImagem.aspx.cs">
+      <DependentUpon>inserirImagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\inserirImagem.aspx.designer.cs">
+      <DependentUpon>inserirImagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\inserirImagemPerfil.aspx.cs">
+      <DependentUpon>inserirImagemPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\inserirImagemPerfil.aspx.designer.cs">
+      <DependentUpon>inserirImagemPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\inserirIngredientes.aspx.cs">
+      <DependentUpon>inserirIngredientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\inserirIngredientes.aspx.designer.cs">
+      <DependentUpon>inserirIngredientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\inserirItemReceita.aspx.cs">
+      <DependentUpon>inserirItemReceita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\inserirItemReceita.aspx.designer.cs">
+      <DependentUpon>inserirItemReceita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\inserirModoPreparo.aspx.cs">
+      <DependentUpon>inserirModoPreparo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\inserirModoPreparo.aspx.designer.cs">
+      <DependentUpon>inserirModoPreparo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\inserirPreferenciaDieta.aspx.cs">
+      <DependentUpon>inserirPreferenciaDieta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\inserirPreferenciaDieta.aspx.designer.cs">
+      <DependentUpon>inserirPreferenciaDieta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\inserirReceitas.aspx.cs">
+      <DependentUpon>inserirReceitas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\inserirReceitas.aspx.designer.cs">
+      <DependentUpon>inserirReceitas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\inserirUsuario.aspx.cs">
+      <DependentUpon>inserirUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\inserirUsuario.aspx.designer.cs">
+      <DependentUpon>inserirUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\redirecionar.aspx.cs">
+      <DependentUpon>redirecionar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\redirecionar.aspx.designer.cs">
+      <DependentUpon>redirecionar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lib\redirecionarPerfil.aspx.cs">
+      <DependentUpon>redirecionarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lib\redirecionarPerfil.aspx.designer.cs">
+      <DependentUpon>redirecionarPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lógicas\Banco.cs" />
+    <Compile Include="Lógicas\Cadastro.cs" />
+    <Compile Include="Lógicas\Comentarios.cs" />
+    <Compile Include="Lógicas\Conexao.cs" />
+    <Compile Include="Lógicas\Denuncias.cs" />
+    <Compile Include="Lógicas\Dietas.cs" />
+    <Compile Include="Lógicas\ImagemReceitaAdicionar.cs" />
+    <Compile Include="Lógicas\ItensReceita.cs" />
+    <Compile Include="Lógicas\Medidas.cs" />
+    <Compile Include="Lógicas\ModosDePreparo.cs" />
+    <Compile Include="Lógicas\Parametro.cs" />
+    <Compile Include="Lógicas\PreferenciaDietaLogicas.cs" />
+    <Compile Include="Lógicas\Receitas.cs" />
+    <Compile Include="Lógicas\Ranking.cs" />
+    <Compile Include="Modelos\Avaliacao.cs" />
+    <Compile Include="Modelos\Comentario.cs" />
+    <Compile Include="Modelos\DenunciaComentario.cs" />
+    <Compile Include="Modelos\DenunciaReceita.cs" />
+    <Compile Include="Modelos\DenunciaUsuario.cs" />
+    <Compile Include="Modelos\Dieta.cs" />
+    <Compile Include="Modelos\DietaReceita.cs" />
+    <Compile Include="Modelos\Favorito.cs" />
+    <Compile Include="Modelos\Ingrediente.cs" />
+    <Compile Include="Modelos\IngredienteSubstituto.cs" />
+    <Compile Include="Modelos\ItemReceita.cs" />
+    <Compile Include="Modelos\Medida.cs" />
+    <Compile Include="Modelos\ModoPreparo.cs" />
+    <Compile Include="Modelos\PreferenciaDieta.cs" />
+    <Compile Include="Modelos\Receita.cs" />
+    <Compile Include="Modelos\Seguidor.cs" />
+    <Compile Include="Modelos\TipoUsuario.cs" />
+    <Compile Include="Modelos\Usuario.cs" />
+    <Compile Include="perfil.aspx.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="perfil.aspx.designer.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pesquisa.aspx.cs">
+      <DependentUpon>pesquisa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pesquisa.aspx.designer.cs">
+      <DependentUpon>pesquisa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="postar.aspx.cs">
+      <DependentUpon>postar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="postar.aspx.designer.cs">
+      <DependentUpon>postar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="receita.aspx.cs">
+      <DependentUpon>receita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="receita.aspx.designer.cs">
+      <DependentUpon>receita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="receitas.aspx.cs">
+      <DependentUpon>receitas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="receitas.aspx.designer.cs">
+      <DependentUpon>receitas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="restaurantes.aspx.cs">
+      <DependentUpon>restaurantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="restaurantes.aspx.designer.cs">
+      <DependentUpon>restaurantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="saude.aspx.cs">
+      <DependentUpon>saude.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="saude.aspx.designer.cs">
+      <DependentUpon>saude.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sobre.aspx.cs">
+      <DependentUpon>sobre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sobre.aspx.designer.cs">
+      <DependentUpon>sobre.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49152</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49152/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

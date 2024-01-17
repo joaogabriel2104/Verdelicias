@@ -1,0 +1,195 @@
+/* ranking do mês */
+.divRanking {
+    height: 100%;
+}
+
+#secaoConteudos2 {
+    height: 500px;
+    background-image: url("../images/fundoRanking.jpg");
+    margin: 50px 0;
+}
+
+#secaoConteudos2 h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.conteudos2 {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.conteudos2 div a {
+    color: black;
+}
+
+.conteudos2 div a img {
+    position: relative;
+    bottom: 50px;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    text-align: center;
+    border-radius: 100px;
+}
+
+#ranking {
+    display: flex;
+    justify-content: center;
+    margin-right: 15%;
+    flex-direction: column;
+}
+
+#rankingPodio {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    align-items: end;
+}
+
+#ranking .quadradoImagem {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+#ranking .quadradoImagem img {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.NumeroAvaliacaoRanking {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    bottom: 7%;
+}
+
+#primeiroLugar {
+    width: 33%;
+    height: 83%;
+    background-color: #F0D181;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#segundoLugar {
+    width: 33%;
+    height: 73%;
+    background-color: #8D8D8D;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#terceiroLugar {
+    width: 33%;
+    height: 63%;
+    background-color: #C0694E;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nomeUsuarioVencedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 30px;
+    background-color: white;
+    min-height: 27px;
+}
+
+.nomeUsuarioVencedor p {
+    word-break: break-all;
+}
+
+.avaliacaoRanking {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 5%;
+}
+
+#ranking .estrelas {
+    position: relative;
+    bottom: 10px;
+    right: 0;
+    width: 60px;
+    height: 33px;
+}
+
+.outrosLugares {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.TextoRanking {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#textoColorido {
+    color: #1DE414;
+}
+
+.aviso {
+    position: fixed;
+    padding: 10px;
+    border-radius: 5px;
+    right: 8%;
+    margin-right: 4px;
+    bottom: calc(8% + 78px);
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.aviso::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: 9%;
+    border-width: 10px 10px 0 10px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+@media screen and (max-width: 500px) {
+    .conteudos2 {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    #secaoConteudos2 {
+        height: 700px;
+        display: flex
+    }
+
+    #secaoConteudos2 h1 {
+        padding: 0;
+    }
+
+    #ranking {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #rankingPodio {
+        width: 100%;
+    }
+
+    .TextoRanking {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
